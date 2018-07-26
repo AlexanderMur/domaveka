@@ -1,0 +1,1017 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html
+	font-size: 14px
+
+
+body
+	min-width: 320px
+	position: relative
+	color: $accent
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto	
+
+a
+	font-size: 1.2rem
+
+p
+	font-size: 1rem	
+
+a
+	color: $green
+	text-transform: uppercase
+	text-decoration: none
+	&:hover, &:active, &:focus
+		color: $green
+		text-decoration: none
+
+.row-flex
+	display: flex		
+
+ul
+	margin: 0
+
+h1
+	font-size: 3rem
+
+h2
+	font-family: 'IZHITSA'	
+
+p,h1,h2,h3,h4,h5,h6
+	margin: 0
+
+.mt-10
+	margin-top: 10px
+
+.mb-10
+	margin-bottom: 10px		
+
+.t-left
+	text-align: left
+.t-right
+	text-align: right
+.t-center
+	text-align: center
+.t-justify
+	text-align: justify
+.t-bold
+	font-weight: bold					
+
+.text-up
+	text-transform: uppercase
+.va-top
+	vertical-align: top
+.c-brown
+	color: $brown !important	
+.c-white
+	color: $white		
+.c-green
+	color: $green
+.c-gray
+	color: $gray
+.ml-30
+	margin-left: 30px	
+.mb-50
+	margin-bottom: 50px
+.mb-20
+	margin-bottom: 20px	
+.mt-50
+	margin-top: 50px			
+.phone
+	font-size: 1.7rem
+	font-weight: bold
+	white-space: nowrap
+	line-height: 1
+.phone-bottom
+	font-size: 0.93rem
+	line-height: 1.5
+.btn
+	display: inline-block
+	width: 205px
+	padding: 2px
+	border-radius: 20px
+	border: 2px solid $brown
+	text-align: center
+	color: $brown
+	font-weight: bold
+	font-size: 0.8rem
+	letter-spacing: 0.2px
+	&:hover
+		color: white
+		background-color: $brown
+.p-relative
+	position: relative		
+
+.btn-green
+	text-transform: none
+	color: $green
+	padding: 5px
+	border: 1px solid $green
+	font-size: 1rem
+	font-weight: normal
+	&:hover
+		background-color: $green
+
+
+.border-bottom:after
+	bottom: 16px
+	content: ''
+	display: block
+	position: absolute
+	height: 1px
+	width: 100%
+	background-color: #ececed
+
+header, section
+	position: relative
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center	
+
+
+/* HEADER */
+
+.header
+	padding: 15px 0
+	width: 100%
+	background-color: $white
+
+.header-fixed
+	position: fixed
+
+.logo-deskription
+	margin: 12px 0 0 13px
+	font-weight: normal
+	line-height: 1
+
+.contact-info
+	margin-right: 3%		
+
+.contact-info, .logo-deskription
+	display: inline-block
+
+.about-us-img
+	width: 100%	
+
+nav 
+	padding-top: 18px
+	.avtive-section
+		text-shadow: 1px 0 0 $brown
+		color: $brown
+		border-bottom: 3px solid $brown	
+	ul
+		display: flex
+		justify-content: space-between
+		list-style: none
+		padding: 0
+		li
+			z-index: 999
+			a
+				display: block
+				font-size: 0.9rem
+				border-bottom: 3px solid transparent
+				&:hover
+					text-shadow: 1px 0 0 $brown
+					color: $brown
+					border-bottom: 3px solid $brown
+
+#toggle-menu
+	display: none
+.hamburger-box
+	margin: 0 auto
+	display: block							
+
+
+/* BANNER */
+
+.s-banner
+	height: 700px
+	.banner-title
+		white-space: pre-wrap
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		text-shadow: 0px 0px 4.3px rgba(0, 0, 22, 0.75)
+
+/* SMALL SECTION */		
+
+.s-section
+	padding: 20px 0
+	h1
+		text-shadow: 0px 0px 4.9275px rgba(7f, 29, 1e, 0.4)
+	h2
+		position: relative
+		font-size: 2.3rem
+		display: inline-block
+		&:before, &:after
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			content: ''
+			width: 12px
+			height: 12px
+			border-radius: 50%
+		&:before
+			left: -20px	
+		&:after
+			right: -20px
+	.title-border
+		border-bottom: 2px solid $brown			
+	.circle-white:before, .circle-white:after
+			border: 3px solid $white
+	.circle-brown:before, .circle-brown:after
+			border: 3px solid $brown			
+	.advantage
+		margin: 20px 0 0 20px
+		h3
+			font-size: 1.07rem
+			display: inline-block
+			margin-bottom: 10px
+		ul
+			padding: 0
+			list-style: none
+			li
+				padding: 10px 0 10px 60px
+				&:empty
+					display: none
+		.adv-el
+			background-image: url('img/icon-1.png')
+			background-repeat: no-repeat
+			background-position: left center
+		.adv-el2
+			background-image: url('img/icon-2.png')
+		.adv-el3
+			background-image: url('img/icon-3.png')
+		.adv-el4
+			background-image: url('img/icon-4.png')
+.borded-bottom
+	width: 100%
+	margin-top: -1px
+	height: 1px
+	background-color: $white
+.borded-bottom-gray
+	background-color: #f2f2f3
+.borded-bottom-white
+	background-color: $white			
+
+/* BLOCK TARGET */
+
+.block-target
+	padding: 20px
+	background-color: rgba($white, 0.85)
+	border-radius: 15px
+	h4
+		position: relative
+		font-size: 1.4rem
+		margin: 10px 0
+		padding-left: 30px
+		color: $green
+		&:before
+			border: 3px solid $green
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+			content: ''
+			width: 9px
+			height: 9px
+			border-radius: 50%
+
+/* CARDS */
+
+.card
+	margin-bottom: 15px
+	cursor: pointer
+	.card-top
+		margin: 0 auto
+		width: 127px
+		height: 127px
+		display: block
+		background-position: center
+		background-repeat: no-repeat
+		border: 3px solid $darkgray
+		border-radius: 50%
+		margin-bottom: 10px
+	.card-bottom
+		font-size: 1.4rem
+	&:hover
+		h4
+			color: $brown
+		.card-top
+			background-color: $bg_gray !important
+
+.card-description-wraper
+	.card-description
+		position: relative
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	left: 50%
+	margin-left: -325px
+	padding: 55px 70px
+	background-color: rgba($white,0.92)
+	box-shadow: 0px 5px 20.02px 1.98px rgba(01, 0, 0, 0.16)
+	width: 650px
+	border-radius: 20px
+	z-index: 999
+	h4
+		font-size: 1.4rem
+		color: $brown
+		margin-bottom: 10px
+		text-shadow: 0px 0px 4.9275px rgba(7f, 29, 1e, 0.4)
+	p
+		text-align: justify
+.close-popup
+	position: absolute
+	top: -40px
+	right: -40px
+	color: $brown
+	font-size: 3rem
+	z-index: 20
+	&:hover,&:focus
+		color: $accent
+
+/* excellence */
+
+.excellence-block
+	margin-bottom: 15px
+	padding: 15px 5px 5px 85px
+	background-repeat: no-repeat
+	background-position: left center
+	h5
+		font-size: 1.1rem
+
+/* PRODUCT */
+
+.product-img
+	width: 100%
+	margin-bottom: 50px
+.product-desctiption
+	white-space: pre-wrap
+	text-align: justify	
+
+/* PRODUCT */
+
+	
+.product-block
+	img
+		width: 100%
+		border-radius: 8px
+		margin-bottom: 15px
+	.title-product
+		font-weight: normal
+		margin-bottom: 5px
+		font-size: 1.1rem
+	.area
+		color: $green
+		font-size: 1.65rem
+		margin-bottom: 5px
+	.price
+		padding-top: 5px
+		font-size: 1.3rem
+		display: inline-block
+		border-top: 2px solid #9a9a9a
+		margin-bottom: 15px
+	.btn
+		display: block
+.project-loop
+	margin-top: -50px
+	.product-block
+		margin-top: 56px
+
+.completed_projects_loop
+	.product-block 
+		margin-top: 10px
+	.loadPorts
+		margin-top: 10px
+/* SECTION CONTACT */
+
+.section-contact
+	box-shadow: inset 0px 20px 35px rgba(0, 0, 0, 0.5)
+	padding: 40px 10px
+	h2
+		color: $white
+		text-transform: uppercase
+		font-size: 1.6rem
+		font-family: $default-font
+
+/* HOW WE works*/
+
+.gradient
+	background: repeating-linear-gradient(-50deg,#ebedec,#ebedec 3px,$white 3px,$white 6px)
+
+.stage
+	position: relative
+	width: 100%
+	border: 3px solid #d9d9d9
+	border-radius: 7px
+	overflow: hidden
+	margin-bottom: 20px
+	img
+		border-radius: 5px
+		width: 100%
+	.stage-header
+		position: absolute
+		top: 20px
+		left: 20px
+	.stage-bottom
+		position: absolute
+		border-radius: 0 0 4px 4px
+		bottom: 0
+		left: 0
+		width: 100%
+		padding: 12px 0
+		background-color: $green
+		font-weight: bold
+		color: $white
+	.stage-description
+		padding-left: 100px	
+	.stage-steps
+		font-size: 1.3rem
+		position: absolute
+		left: 0
+		bottom: 0
+		color: $green
+		height: 54px
+		width: 89px
+		background-image: url("img/stage.png")
+		background-repeat: no-repeat
+		padding: 18px 10px 10px 10px
+
+
+/* COMPLETED PROJECTS */
+
+.completed-projects
+	margin-top: 50px
+	.product-block
+		cursor: pointer
+		padding: 5px
+		border-radius: 5px
+		border: 2px solid transparent
+		&:hover,&:focus
+			background-color: white
+			border: 2px solid #dcdcdc
+	.completed_projects_loop
+		background-color: white
+		background-image: url('img/bggg.png')
+		background-position: bottom -0px right 50%
+		background-repeat: no-repeat
+		padding-bottom: 140px
+
+	.project-gallery
+		background-color: #ebecec
+		transition: opacity 0.5s
+		margin-top: -1px
+		.big-img
+			max-width: 100%
+			border-radius: 15px
+.gakery-block
+	height: 100%
+	background-color: $white
+	border-radius: 15px
+	padding: 20px
+	.area
+		color: $green
+		font-size: 1.65rem
+		margin-bottom: 5px
+		width: 100px
+		border-bottom: 1px solid #737373
+	.small-img-block
+		display: flex
+		justify-content: space-between
+		margin-bottom: 10px
+		span
+			white-space: nowrap
+			display: flex
+			align-items: flex-end
+		img
+			width: 80%	
+
+/* REVIEWS */
+
+.reviews
+	display: flex
+	.reviews-text-block
+		p:first-child
+			text-align: justify
+		position: relative
+		padding: 0px 35px 35px
+		margin-left: 5px
+		.reviews-text
+			font-size: 0.95rem
+			letter-spacing: 1px
+		&:after, &:before
+			position: absolute
+			content: ''
+			display: block
+			width: 29px
+			height: 18px
+			background-repeat: no-repeat
+		&:after
+			top: 0
+			left: 0px
+			background-image: url("img/rew-i-r.jpg")
+		&:before
+			bottom: 30px
+			right: 0px
+			background-image: url("img/rew-i-l.jpg")
+	.img-reviews
+		h5
+			margin-top: 5px
+			font-size: 1rem
+			text-transform: uppercase
+		img
+			border-radius: 5px
+
+/* FOOTER */
+
+footer
+	color: $white
+	p
+		font-size: 0.9rem
+		margin-bottom: 5px
+	.phone
+		padding-left: 50px
+		font-size: 1.9rem
+		background-repeat: no-repeat
+		background-image: url("img/phone.png")
+		background-position: left center
+		margin-bottom: 30px
+	.btn-large
+		font-size: 0.9rem
+		color: $white
+		font-weight: bold
+		border: 2px solid $white
+		width: 100%
+		padding-top: 10px
+		padding-bottom: 15px
+		background: linear-gradient(0deg, rgba(127,41,30,1) 0%, rgba(155,89,80,1) 100%)
+		&:active
+			background: linear-gradient(0deg, rgba(155,89,80,1) 0%, rgba(127,41,30,1) 100%)
+			box-shadow: 0px 0px 9.68px 1.32px rgba(0, 0, 02, 0.59)
+			text-shadow: 0px 0px 9.68px rgba(0, 0, 02, 0.59)
+	.mail
+		padding-left: 50px
+		background-repeat: no-repeat
+		background-image: url("img/mail.png")
+		background-position: left center
+		text-transform: none
+		font-weight: bold
+		color: $white
+		&:hover
+			text-decoration: underline		
+
+.card-description-wraper
+	display: none
+
+/* POPUP */
+.popup-wrapper
+	position: fixed
+	top: 0
+	left: 0
+	opacity: 0
+	z-index: -1
+	transition: 0.25s
+	pointer-events: none
+	width: 100%
+	height: 100%
+	overflow-y: scroll
+.popup-view
+	position: relative
+	background-color: $white
+	border-radius: 13px
+	padding: 59px
+.popup-content
+	h2
+		text-transform: uppercase
+		font-weight: normal
+		margin-top: 20px
+		margin-bottom: 20px
+		font-size: 1.3rem
+		font-family: $default-font !important
+		text-shadow: none
+	h3
+		font-size: 1rem
+		margin-bottom: 20px
+		margin-top: 10px			
+.loading
+	opacity: 0.7
+.popup-bg
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	position: fixed
+	background-color: rgba(black,0.4)
+	opacity: 0
+	z-index: -1
+	transition: 0.25s
+	pointer-events: none	
+.single-show
+	overflow: hidden
+	.popup-wrapper
+		opacity: 1
+		z-index: 9999999999
+		pointer-events: all
+.demo #lightSlider 
+	.thumb
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+		width: 134px
+		height: 94px
+		cursor: pointer
+.drag .thumb, .drag
+	cursor: grabbing !important
+.pointer
+	cursor: pointer
+
+.layer-show
+	opacity: 1
+	z-index: 99
+	pointer-events: all
+	&:hover
+		cursor: pointer
+/* END POPUP*/
+
+/* Contact form */
+
+
+
+.file
+	display: inline-block
+	background-color: white
+	cursor: pointer
+	display: inline-block
+	border: 2px solid $lightgray
+	color: $lightgray
+	padding: 8px 10px 8px 10px
+	height: 40px
+	border-radius: 5px
+	width: 250px
+	margin-right: 5px
+	&:hover
+		// border-color: #939393
+		color: #939393
+
+.contact-form-header
+	.file
+		background-color: #f3f0f0
+	max-width: 300px
+	padding: 20px 10px
+	border-radius: 10px
+	position: absolute
+	top: 50%
+	right: 0
+	transform: translateY(-50%)
+	background-color: rgba(#fefefe, 0.85)
+	border: 2px solid rgba(#fefefe, 0.34)
+	p
+		font-size: 0.7rem
+		margin-bottom: 10px
+	input, textarea, label
+		color: $lightgray
+		font-family: $default-font
+		outline: none
+	input:not([type='submit']), textarea
+		color: $lightgray
+		display: inline-block
+		background-color: rgba(#fefefe, 0.85)
+		width: 100%
+		max-width: 100%
+		padding: 8px
+		border-radius: 5px
+		box-shadow: none
+		border: 2px solid #5e5e5d
+	::-webkit-input-placeholder
+		text-align: center
+	input[type='submit']
+		font-weight: bold
+		display: block
+		text-transform: uppercase
+		border: 1px solid $white
+		width: 50%
+		margin: 0 auto
+		padding: 10px 5px
+		border-radius: 10px
+		color: $white
+		background: linear-gradient(0deg, #98cb00 0%, #669900 100%)
+		&:active
+			background: linear-gradient(0deg, #669900 0%, #98cb00 100%)		
+	input[type=file]
+		display: none
+	h2
+		font-family: $default-font
+		color: $green
+		text-align: center
+		font-size: 1rem
+
+.contact-form-popup
+	position: static
+	transform: none
+	background-color: #f1f1f1
+	input[type=submit]
+		margin-top: 10px
+	h2
+		position: relative
+		text-transform: uppercase
+		margin-bottom: 10px
+	.form-border-bottom:before
+		position: absolute
+		bottom: -5px
+		left: 50%
+		transform: translateX(-50%)
+		content: ''
+		height: 2px
+		width: 30%
+		margin: 0 auto
+		background-color: $green			
+
+.contact-form-section
+	::-webkit-input-placeholder
+		color: $lightgray
+	.file
+		text-align: left
+	font-family: $default-font
+	input
+		display: none
+		margin-top: 10px
+		display: inline-block
+		border: 2px solid $lightgray
+		background-color: white
+		outline: none
+		margin-right: 5px
+		border-radius: 5px
+		max-width: 250px
+		padding: 10px
+	input[type=file]
+		display: none
+	input[type=submit]
+		width: 250px
+		vertical-align: top
+		height: 36px
+		display: inline-block
+		font-weight: bold
+		border: none
+		border-bottom: none
+		transition: box-shadow .1s,transform .1s,-webkit-box-shadow .1s,-webkit-transform .1s
+		box-shadow: 0 3px 0 0 $accent, 0 3px 0 0 $accent, 0 3px 8px 0 rgba(102,55,0,.4)
+		padding: 10px 20px
+		border-radius: 30px
+		background: linear-gradient(0deg, #ef811e 0%, #fac373 100%)
+		&:active
+			transform: translateY(2px)
+			box-shadow: 0 1px 0 0 $accent, 0 2px 0 0 $accent, 0 2px 4px 0 rgba(102,55,0,.4)
+	span[role=alert]
+		display: inline-block		
+
+.contact-form-green
+	input[type=submit]
+		outline: none
+		background: linear-gradient(0deg, #669900 0%, #a5df00 100%)
+		&:active
+			box-shadow: 0 1px 0 0 #000, 0 2px 0 0 #000, 0 2px 4px 0 rgba(102,55,0,.4)
+
+.contact-form-footer p, .contact-form-footer div
+	color: #000 !important
+
+.contact-form-footer label.file
+		border: 2px solid #5e5e5d
+		width: 100%
+		background-color: rgba(254, 254, 254, 0.85)
+		color: #5e5e5d
+.contact-form-popup
+	label.file, input, textarea
+		border: 2px solid #adadad !important
+		width: 100%
+		color: #5e5e5d										
+.banner-section
+	position: relative
+	height: 100%
+
+#top-menu
+	background-color: $white
+.fixed-menu
+	z-index: 99
+	transition: 1s
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	padding: 25px 10px
+	box-shadow: 0 0 15px 0 rgba(40,40,40,.2)	
+
+/*End contact form*/
+
+/*Circles*/
+.card-circles
+	.card-text
+		display: none
+/*End circles*/
+
+
+
+/*contact footer*/
+.contact-form-footer
+	display: none
+	position: fixed
+	top: 50%
+	left: 0
+	margin: auto
+	background-color: white
+	z-index: 999999
+	box-shadow: 0 0 14px -7px black
+	.close-popup
+		color: $gray
+		border-radius: 50%
+		background-color: white
+		border: 1px solid $gray
+		width: 20px
+		height: 20px
+		top: -20px
+		right: -30px
+		cursor: pointer
+		i
+			display: block
+			position: absolute
+			left: 50%
+			top: 50%
+			font-size: 18px
+			transform: translateY(-50%) translateX(-50%)
+			margin-top: -1px
+.show
+	opacity: 1
+	z-index: 99
+	pointer-events: all
+
+/*end contact footer*/
+
+.loadProjects, .loadPorts
+	outline: none
+	vertical-align: top
+	height: 36px
+	display: inline-block
+	font-weight: bold
+	border: none
+	border-bottom: none
+	transition: box-shadow .1s,transform .1s,-webkit-box-shadow .1s,-webkit-transform .1s
+	box-shadow: 0 3px 0 0 #000, 0 4px 0 0 #000, 0 4px 8px 0 rgba(102,55,0,.4)
+	padding: 10px 20px
+	border-radius: 10px
+	color: #000
+	background: linear-gradient(0deg, #ef811e 0%, #fac373 100%)
+	margin-bottom: 10px
+	&:disabled
+		opacity: 0.5
+	&:active
+		transform: translateY(2px)
+		box-shadow: 0 1px 0 0 #000, 0 2px 0 0 #000, 0 2px 4px 0	
+.loadProjects
+	margin-top: 56px
+/*new Popup*/
+.popup-view
+	.prev,.next
+		background-color: white
+		border: none
+		width: 30px
+		outline: none
+		color: darken(#e0e0e0,50%)
+	.swiper-button-disabled
+		color: #e0e0e0
+	.prev
+		position: absolute
+		top: 0
+		left: 0px
+		height: 100%
+	.next
+		position: absolute
+		top: 0
+		right: 0px
+		height: 100%
+.popup-view
+	position: relative
+	.t-bold, b
+		white-space: pre-wrap
+	.close-popup
+		top: 0
+		right: 20px
+		cursor: pointer
+	.demo
+		padding: 0px 30px
+		margin-top: 20px
+		position: relative
+	.popup-title
+		font-size: 1.8rem
+		font-weight: normal
+	.popup-price
+		font-size: 1.8rem
+		font-weight: bold
+	.popup-option
+		padding-left: 35px
+		min-height: 50px
+		background-image: url('img/icon-17.png')
+		background-repeat: no-repeat
+		background-position: left top	
+	.popup-option-area
+		font-size: 1.3rem				
+/*end new popup*/
+
+/* fix */
+.row.fix
+	display: flex
+	flex-wrap: wrap
+.section-big
+	padding-top: 100px
+	margin-top: 0
+	padding-bottom: 100px
+.completed-projects
+	padding-bottom: 0
+	.project-gallery
+		padding-bottom: 80px
+#production
+	.row
+		margin-top: -50px
+		.product-img
+			margin-top: 50px
+/* end fix*/
+
+/*popup*/
+.mfp-content
+	.container
+		margin: 40px auto
+.popup-view 
+	.gallery-top 
+		width: 100%
+		.swiper-wrapper
+			position: relative
+			.swiper-slide 
+				background-size: contain
+				background-position: center
+				background-repeat: no-repeat
+				&:before
+					content: ''
+					padding-top: 75%
+					display: inline-block
+	.thumbs-padding
+		margin-top: 20px
+		padding: 0 40px
+		position: relative
+	.gallery-thumbs .swiper-slide 
+		width: 134px
+		height: 94px
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+	.gallery-thumbs .swiper-wrapper
+		// margin-left: calc(-50% + 67px)
+.border
+	position: absolute
+	height: 94px
+	transform: translate3d(0,0,0)
+	border: 4px solid #98ec00
+	z-index: 2
+	transition: 0.3s
+	pointer-events: none
+	background-image: linear-gradient(to bottom right,rgba(255,255,255,.25),rgba(64,64,64,.1))
+/*end popup**/
+@import "media" // Всегда в конце
